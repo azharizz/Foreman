@@ -1,0 +1,3 @@
+VOICE-031 - nas-upload/Project-Alpha/04-Meetings/Voice 031.m4a - recorded 2026-10-30 - site noise, very short, low level, band-limited (script used to synthesize the audio; ground truth)
+
+Tomas: Yeah, that one is, er, fine. Okay. Leave it with me.

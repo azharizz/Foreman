@@ -147,3 +147,13 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# --- Foreman project ---
+# Third-party download (UGREEN kit, Devpost pages): not ours to redistribute
+requirements/
+# Superseded v1 dataset (v2 replaces it)
+dataset/
+.DS_Store
+__pycache__/
+.venv/
+_tmp/

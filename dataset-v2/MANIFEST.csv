@@ -1,0 +1,75 @@
+path_under_dataset,project,kind,date,role,sha256,bytes
+nas-upload/Project-Alpha/01-Contract/CONTRACT-001_Original-Agreement.pdf,Alpha,contract,2026-03-02,"executed contract, $77,300",ad2488bfd331d7f443b5786d78a4fa22a84f5802ddd82788f0837e11feac374b,5054
+nas-upload/Project-Alpha/01-Contract/from-tender/Scope-Schedule_rev0.pdf,Alpha,tender-schedule,2026-01-09,superseded tender schedule (walls 250 m2),5de80212c457e1fc5d5fe58b38bdbb07dabd9d41533c9a577e89703a9fea5f56,2474
+nas-upload/Project-Alpha/02-Change-Orders/CO-001_Additional-Electrical.pdf,Alpha,change-order,2026-05-11,"CO-001 $3,000.00 signed 2026-05-11",80f158ab6e5d58dade9628063950796461c4d262f6a7d3778a1a797d499f153c,2680
+nas-upload/Project-Alpha/02-Change-Orders/CO-002_Additional-Windows.pdf,Alpha,change-order,2026-05-25,"CO-002 $4,000.00 signed 2026-05-25",bbf6508c8bb6e9cdec80fd64ab6dd5e9df58dd9fd44c0356cdfadf36a1a39a06,2680
+nas-upload/Project-Alpha/02-Change-Orders/CO-003 Flooring modification.pdf,Alpha,change-order,2026-06-15,"CO-003 $2,000.00 signed 2026-06-15",6497293e22357a54245a96fd04adc66572d2ac4ba48475d89acdcefab6b94f50,2759
+nas-upload/Project-Alpha/02-Change-Orders/CO-004_Additional-Doors.pdf,Alpha,change-order,2026-10-14,"CO-004 $2,500.00 not signed by client",54ea65b27977c27cd05d20cb6b3586a48052e512c0331871fb18295b9b881c94,2554
+nas-upload/Project-Alpha/02-Change-Orders/CO-006_Extra-Concrete-Work_RevA.pdf,Alpha,change-order,2026-07-08,"CO-006 - Revision A $5,200.00 signed 2026-07-08",b900d04782cb2518e0e6261533d6282c74c52b182ab96af3b11dcd233dc47698,2693
+nas-upload/Project-Alpha/02-Change-Orders/CO-006_Extra-Concrete-Work_RevB.pdf,Alpha,change-order,2026-07-15,"CO-006 - Revision B $6,100.00 signed 2026-07-15",ea6e50cfadaf52aedd85095000a5a36336853f3498a65ef366212adc440083b0,2714
+nas-upload/Project-Alpha/02-Change-Orders/CO-007 omit ceiling L2 store.pdf,Alpha,change-order,2026-08-03,"CO-007 -$3,750.00 signed 2026-08-03",ea03bfab6264a85d4f73e8e588bad419f3fb2ac625a1b17e4fa2277946c1fd42,2814
+nas-upload/Project-Alpha/02-Change-Orders/CO-010_Additonal-Windows-L1.pdf,Alpha,change-order,2026-09-01,"CO-010 $4,000.00 signed 2026-09-01",37f8b556da3b54ed56cb0b47c0b4ca119f62bb487cc5a3682003014ebf44e1af,2713
+nas-upload/Project-Alpha/02-Change-Orders/CO_008 ACM removal.pdf,Alpha,change-order,2026-09-10,"CO-008 $4,400.00 signed 2026-09-10",fed90788548ce6ae071afa5da43f548a64d1f9d5720709ba9f97634795ecd3a9,2816
+nas-upload/Project-Alpha/02-Change-Orders/co-005_hvac_reroute.pdf,Alpha,change-order,2026-09-23,"CO-005 $1,800.00 not signed by client",4b97a146d7529a5546a7258b628824541cb8cf6864ad3ab6dae45b71f3c7fe6a,2517
+nas-upload/Project-Alpha/03-Invoices/INV-001.pdf,Alpha,invoice,2026-06-01,"INV-001 $3,000.00 ref CO-001",76485d3f7bc2dc8590033f971cf6c0bd0ba246c4b5df91d038feaaad174c0e86,2282
+nas-upload/Project-Alpha/03-Invoices/INV-002.pdf,Alpha,invoice,2026-06-10,"INV-002 $4,000.00 ref CO-002",de955f6d26f237132360095ac89829c9165b4f2dd32de9322466a394b8eea9fe,2275
+nas-upload/Project-Alpha/03-Invoices/INV-003.pdf,Alpha,invoice,2026-06-30,"INV-003 $2,000.00 ref CO-003",3a2466addbbe3b8ca67c949ec9cc64f99a9e593c15107adf8b514d63e05dc704,2286
+nas-upload/Project-Alpha/03-Invoices/INV-004.pdf,Alpha,invoice,2026-07-31,"INV-004 $5,200.00 ref CO-006 Revision A",d821da27ea047775c1273cdc1c535b7694bc616d794a7d11ea74a8946362e2af,2302
+nas-upload/Project-Alpha/03-Invoices/INV-005.pdf,Alpha,invoice,2026-08-15,"INV-005 $3,000.00 ref CO-001",304aac922a39b9550c93ddc1c30cd304c8d58aae052a2a268a870aa4ddf4e694,2286
+nas-upload/Project-Alpha/03-Invoices/INV-006.pdf,Alpha,invoice,2026-08-21,"INV-006 $2,600.00 ref Client email approval 06/08/2026, quote Q-0806",8c13d89317bebadd9b3f4ae002054267c15ddd1e1f718972984aacb7346ace3b,2341
+nas-upload/Project-Alpha/03-Invoices/INV-007.pdf,Alpha,invoice,2026-09-15,"INV-007 $4,000.00 ref CO-010",e11b3a46f0d1e2433d1bc7892812b5ce21584b34d733a54988bdf68af9b9dda3,2279
+nas-upload/Project-Alpha/03-Invoices/INV-008.pdf,Alpha,invoice-scanned,2026-09-18,"INV-008 $4,400.00 ref CO-008 (image-only scan, rotated, noisy)",a1ae5b6d725767c19feba48d1d3a916c0aaeb847cc67c0f0fbd78257e4581597,568322
+nas-upload/Project-Alpha/03-Invoices/INV-009.pdf,Alpha,invoice,2026-10-05,"INV-009 $1,350.00 ref Client request",a435410d7736af5807f7345220537d15037295fe54ee4b8bef469f3756f0dacf,2309
+nas-upload/Project-Alpha/03-Invoices/INV-010.pdf,Alpha,invoice,2026-10-20,"INV-010 $8,500.00 ref CO-004",4634e9d67b382b37238a516bc01088e4ff7e4397a81ec55bf4c60218838147f9,2305
+nas-upload/Project-Alpha/04-Meetings/REC-2026-07-14.m4a,Alpha,meeting-recording,2026-07-14,REC-2026-07-14 clean,77a4b8aafa5e428db4c02fe47fec7b12cd21b72d8f35024967ba266bf5a7ba63,378853
+nas-upload/Project-Alpha/04-Meetings/REC-2026-08-12 site walk.m4a,Alpha,meeting-recording,2026-08-12,"REC-2026-08-12 site noise, overlapping speakers",e4fb8997ad7c75e1ebb9ea2fc91402e4e891f0ecccee78c018b51c96528392f1,179478
+nas-upload/Project-Alpha/04-Meetings/REC-2026-09-22.m4a,Alpha,meeting-recording,2026-09-22,REC-2026-09-22 clean,f81bfb92c5c2a34872b4f58a3936265c484ba0f0face472d6ee1f29188a73a11,221620
+nas-upload/Project-Alpha/04-Meetings/REC-2026-10-12.m4a,Alpha,meeting-recording,2026-10-12,REC-2026-10-12 clean,3d9d5de0be238c73cb99a2ef95c6642c9dd60d4e285ec13460dbb0ea51195c05,189264
+nas-upload/Project-Alpha/04-Meetings/Voice 031.m4a,Alpha,meeting-recording,2026-10-30,"VOICE-031 site noise, very short, low level, band-limited",632f41260c7cea11f12b5e12af9354e26a15c0b9b40c02eea4c5cdc0aa64899b,21321
+nas-upload/Project-Alpha/05-Site-Reports/SR-2026-06-03.pdf,Alpha,site-report,2026-06-03,Week ending 3 June 2026,5f41a908322e635c40d31a928cb9eee23040a3c65e30de87e0f40aa5dffdb948,2070
+nas-upload/Project-Alpha/05-Site-Reports/SR-2026-07-20.pdf,Alpha,site-report,2026-07-20,Week ending 20 July 2026,cd8df60da5dc29038ae7ab1958716f532734374afa1bb1ed935acfe603e9c849,2057
+nas-upload/Project-Alpha/05-Site-Reports/SR-2026-08-28.pdf,Alpha,site-report,2026-08-28,Week ending 28 August 2026,03ccd00ac12b62f253c746e730c37dd7aa5862e6ddd8e9e47808a8f1873c1f08,2178
+nas-upload/Project-Alpha/05-Site-Reports/SR-2026-09-28.pdf,Alpha,site-report,2026-09-28,Week ending 28 September 2026,78d1aa5f42a5b6d20260e32d76929c5b5fcbd50cc29b7e59201432ace0657412,2123
+nas-upload/Project-Alpha/05-Site-Reports/SR-2026-10-15.pdf,Alpha,site-report,2026-10-15,Week ending 15 October 2026,ba69976a3f0f27d378d4fc32eba2427b92bb447224cc04a46530e593b10b2710,2108
+nas-upload/Project-Alpha/06-Site-Photos/IMG_3021.jpg,Alpha,site-photo,2026-06-03,"windows; GPS -6.89964,107.59998",4703b2446d87c32900f5ce3d1e94892b0b70bb71361eacf1ca508b893396434d,141536
+nas-upload/Project-Alpha/06-Site-Photos/IMG_3188.jpg,Alpha,site-photo,2026-07-20,"slab; GPS -6.89995,107.60040",9ddd0a0c625c38f1145b66d0c61ecf82ada05ed7dba0ff142166dc069ea49bc8,127838
+nas-upload/Project-Alpha/06-Site-Photos/IMG_3235.jpg,Alpha,site-photo,2026-08-18,"acm; GPS -6.89966,107.59962",876e906d0cb4745834c96ab919a9f28a1f367e860871ff903638f71719cc3a88,141421
+nas-upload/Project-Alpha/06-Site-Photos/IMG_3290.jpg,Alpha,site-photo,2026-08-26,"firewall; GPS -6.90030,107.59984",6e6e275b02e29c9853f1485bb3a22965ed4a0d03082003d8b00003cebcdc21fd,104735
+nas-upload/Project-Alpha/06-Site-Photos/IMG_3304.jpg,Alpha,site-photo,2026-09-28,"ducts; GPS -6.89985,107.59979",30af33eba54978ea330a45eee7233413808178761f5c463b8228409fdb3d0048,103768
+nas-upload/Project-Alpha/06-Site-Photos/IMG_3377.jpg,Alpha,site-photo,2026-10-10,"openings; GPS -6.90028,107.59978",a37c66a9a82e6267fc7e148b64c5ca51a9b0461a7fd22ebee4736ca1d6e38396,106801
+nas-upload/Project-Alpha/06-Site-Photos/IMG_3412.jpg,Alpha,site-photo,2026-10-15,"doors; GPS -6.90023,107.59980",966702c5e94ddd9d04bddf43d1eda9b337f94c1ecedb2ef110ebbc09b61baac1,113662
+nas-upload/Project-Alpha/06-Site-Photos/IMG_3460.jpg,Alpha,site-photo,2026-10-15,"doors2; GPS -6.93514,107.62839",da7cdb3b853a83eb52bbd5484fd13d18ab71d2eff3178ec821b9545cae97b5e6,118958
+nas-upload/Project-Alpha/06-Site-Photos/IMG_5521.jpg,Alpha,site-photo,NO-EXIF-DATE,boards; no GPS,17e7df9121f6f7058934225b16fa55c827a80fa3eaa77e74f3080b45c75efa85,126963
+nas-upload/Project-Alpha/07 Payments/PA-01.pdf,Alpha,payment-application,2026-05-04,"PA-01 gross $15,000.00 due $14,250.00",a3537521a5636f845aa4f0799aa4f4fccd53be9a2dd1f6303866400f0be282ef,2935
+nas-upload/Project-Alpha/07 Payments/PA-02.pdf,Alpha,payment-application,2026-07-03,"PA-02 gross $44,000.00 due $27,550.00",e936580fa8279b08539af70f65739378f56bab4a326cb3577999ca9c6a8e845f,2953
+nas-upload/Project-Alpha/07 Payments/PA-03.pdf,Alpha,payment-application,2026-10-02,"PA-03 gross $79,100.00 due $33,345.00",1c380cb252bcf402e1e560f87464605b5473a148b9b202ad878943435292499a,2968
+nas-upload/Project-Alpha/07 Payments/PC-03.pdf,Alpha,payment-certificate,2026-10-28,"PC-03 certifies $29,782.50",dfc944b40573f0c579d00d86ad092ef0201f5a0fb8d1931fb977d027faf4b6c4,2677
+nas-upload/Project-Alpha/08-site diary/Diary 09.10.2026.pdf,Alpha,site-diary,2026-10-09,diary 2026-10-09,8c363d7209ab200ee4e7d6e1fa24ce3cde764d5784fee1dae54a129df1521726,1979
+nas-upload/Project-Alpha/08-site diary/Site diary 12-08-2026.pdf,Alpha,site-diary,2026-08-12,diary 2026-08-12,27f125c91b77c222bc32903de19cc3f4ef2db15ea2d78e2a61b3975ca1f147a3,2116
+nas-upload/Project-Alpha/08-site diary/SiteDiary 24 Aug 26.pdf,Alpha,site-diary,2026-08-24,diary 2026-08-24,59b212507b84d3dafad233ea0414d3d05339c06979bbb2e59ee3c9d5cfa87f77,2023
+nas-upload/Project-Alpha/08-site diary/diary_2026-08-18.pdf,Alpha,site-diary,2026-08-18,diary 2026-08-18,41958bbb4e81f24611257b4013d9ea213867b07004612bf4c6f6c8898ca28eab,2125
+nas-upload/Project-Alpha/09-Correspondence/Notice - site condition L1 east wall.pdf,Alpha,email-thread,2026-09-04,Notice of site condition - Level 1 east wall,91efaed53329084181283b669eb6597701f821fe99079dd55d26240d0f378cad,2253
+nas-upload/Project-Alpha/09-Correspondence/PA-03 certification.pdf,Alpha,email-thread,2026-10-22,PA-03 certification,9ee0debf4fae905578030d3f066088e858e2444bce4b14c8b9c5b2e2f20b60cc,2241
+nas-upload/Project-Alpha/09-Correspondence/RE_ Fire rating store rooms - Q-0806.pdf,Alpha,email-thread,2026-08-07,RE: Fire rating store rooms - quote Q-0806,12d76fb2f9fd3400394646768e92fcb945382332c8ca62ae7025ca4d7d82663b,2592
+nas-upload/Project-Alpha/10_RFIs/RFI-014.pdf,Alpha,rfi,2026-08-04,RFI-014,e803dd9c7049360f7c96cfd702cfe4719bb97c2c8a7cbd0b203ebf77732e1a2c,2171
+nas-upload/Project-Alpha/10_RFIs/RFI-017.pdf,Alpha,rfi,2026-09-25,RFI-017,61aec157e1463e766a4d170089b41b7d82385957e96a523dd49c163dac2e2323,2141
+nas-upload/Project-Alpha/11-Drawings/Drawing-Register.pdf,Alpha,drawing-register,2026-09-25,drawing/spec revisions,f16f065a26a5ba15f47686df3b220999520e0361aa448f4d0dc58904e139f0dc,2811
+nas-upload/Project-Alpha/12-Deliveries/DN-4410.pdf,Alpha,delivery-note,2026-08-07,DN-4410,ec8eb5b50941a28a9c734b65c81e5c8b8a0a4778ccb3d719cddc3bac1bc80455,2224
+nas-upload/Project-Alpha/12-Deliveries/DN-4702.pdf,Alpha,delivery-note,2026-08-26,DN-4702,c6324aef20cfac44e94316a0be6e521b91e95d0194058baf2cbd9d27950f0aa1,2215
+nas-upload/Project-Alpha/12-Deliveries/DN-5531.pdf,Alpha,delivery-note,2026-10-09,DN-5531,b776dd57cf14eb6fb8798b72ff243a6e908e0e5bba28210e064fcb79bcf2bd5b,2284
+nas-upload/Project-Alpha/99-Misc/Safety-Induction-Notes.pdf,Alpha,misc-distractor,2026-03-09,irrelevant,a1602732f3fabf9c573f5505079c5484c74fc537119c822757d3e1fd67ada160,1877
+nas-upload/Project-Beta/Change Orders/CO-004.pdf,Beta,change-order,2026-10-02,"Beta CO-004 $8,500 signed",ae019f9fd403ecc90008462317b09198c2a666b9740a1cd6fdb8c502573e5071,2516
+nas-upload/Project-Beta/Contract/CB-2026-014 Agreement.pdf,Beta,contract,2026-07-01,"Beta contract $31,400",056b79bc12e330fc3db4d7ca097e38ba0a81032a492bfbdebe37f3e41632a5cb,2806
+nas-upload/Project-Beta/Invoices/INV-001.pdf,Beta,invoice,2026-08-05,"Beta INV-001 $9,800.00",f2bfcb67c7112e81d63908b93ef8b0c2ddc1dd97b7ccc5001c1b891bb60e3d16,2270
+nas-upload/Project-Beta/Invoices/INV-002.pdf,Beta,invoice,2026-09-02,"Beta INV-002 $12,000.00",275f7d29dd36fc2a1fb8b249b7f3fdb9eb8f1e3c59aeafefad36da7e3276ff15,2262
+nas-upload/Project-Beta/Invoices/INV-003.pdf,Beta,invoice,2026-09-20,"Beta INV-003 $4,600.00",b644de1b446c345427f3313f4384d3d36c6e080a2dac744a8ebc4989fa5df5c0,2265
+nas-upload/Project-Beta/Invoices/INV-010.pdf,Beta,invoice,2026-10-20,"Beta INV-010 $8,500.00",aaf4098f99f83af49c5460554a18a32af381ae946c0fe347e595c63b3f0c0c5d,2277
+nas-upload/Project-Gamma/01-Contract/CONTRACT-001_Original-Agreement.pdf,Gamma,contract,2026-08-17,"Gamma contract $42,000",5b5f5e4632054a82561209e974cf97e9ac351f3c8e179dad51c54247553da52b,2859
+nas-upload/Project-Gamma/02-Change-Orders/CO-004_Additional-Doors.pdf,Gamma,change-order,2026-10-08,"Gamma CO-004 $3,000 signed",8dc4082d29933e862b67c817eedcefba0fffcf40667b623426852a368c793f91,2599
+nas-upload/Project-Gamma/03-Invoices/INV-001.pdf,Gamma,invoice,2026-09-30,"Gamma INV-001 $22,000.00",dd4d1ed048c4b97b41e3a743636ef5a837a15e05324abb5c28f7790d9caf04ea,2279
+nas-upload/Project-Gamma/03-Invoices/INV-004.pdf,Gamma,invoice,2026-10-16,"Gamma INV-004 $3,000.00",36b8525b3bc0f3d7257c6fa864ec48b9afe7b3734711bd8a2a7ef6f94315526e,2275
+nas-upload/Project-Gamma/05-Site-Reports/SR-2026-10-15.pdf,Gamma,site-report,2026-10-15,Week ending 15 October 2026,7bf82a2e2eb1abdda1d4771b70c386491964df70c27d5b0377a668a34f7c5044,2037
+nas-upload/Project-Gamma/06-Site-Photos/IMG_3459.jpg,Gamma,site-photo,2026-10-15,"doors2; GPS -6.93471,107.62786",e085d4a6354d5b034bb7833877c9e1e9b6d4a47ad3ef038dbc2e76dc6f0d0026,119040
+nas-upload/Project-Alpha/06-Site-Photos/REAL_01.jpg,Alpha,real-photo-slot,,EMPTY - see real-photo-slot/README.md,,
+nas-upload/Project-Alpha/06-Site-Photos/REAL_02.jpg,Alpha,real-photo-slot,,EMPTY - see real-photo-slot/README.md,,
+nas-upload/Project-Alpha/06-Site-Photos/REAL_03.jpg,Alpha,real-photo-slot,,EMPTY - see real-photo-slot/README.md,,

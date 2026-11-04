@@ -1,0 +1,7 @@
+REC-2026-08-12 - nas-upload/Project-Alpha/04-Meetings/REC-2026-08-12 site walk.m4a - recorded 2026-08-12 - site noise, overlapping speakers (script used to synthesize the audio; ground truth)
+
+Tomas: Site walk, Project Alpha, twelfth of August. Maya is with me on Level 2.
+Maya: In the Level 2 store we need two more partition walls. About thirty square meters.
+Tomas: Thirty square meters, okay. At the contract rate that is about eighteen hundred dollars.
+Maya: Fine, just do it. We will sort out the paperwork later.
+Tomas: Right. I will put it in the next payment application.

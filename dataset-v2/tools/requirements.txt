@@ -1,0 +1,7 @@
+# Python packages (install into a venv OUTSIDE the project folder, e.g. the system scratchpad)
+reportlab==5.1.0
+piexif==1.1.3
+pillow==13.0.0
+numpy==2.4.6
+# System tools (macOS): say, afconvert, ffmpeg, ffprobe, pdftoppm, pdftotext, osascript
+# Optional for verification: openai-whisper CLI with the small.en model cached in ~/.cache/whisper

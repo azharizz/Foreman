@@ -1,0 +1,387 @@
+{
+  "dataset": "Foreman synthetic dataset v2 - main project Project Alpha (Harbor View Clinic Fit-Out)",
+  "currency": "USD",
+  "seed": 20261104,
+  "totals": {
+    "contract_sum": 77300,
+    "contract_sum_after_CO_007": 73550,
+    "invoiced": 38050,
+    "invoices_matched": 13000,
+    "invoices_flagged": 25050,
+    "amount_without_approval_evidence": 11650,
+    "inv010_over_unsigned_co": 6000,
+    "pa03_claimed_due": 33345.0,
+    "pa03_gross": 79100,
+    "pa03_gross_overclaim": 5550,
+    "pc03_certified": 29782.5,
+    "pc03_withheld": 3562.5,
+    "pa03_due_if_both_overclaims_removed": 28072.5
+  },
+  "findings": [
+    {
+      "id": "F01",
+      "target": "INV-001",
+      "cls": "Matched",
+      "amount": 3000,
+      "evidence": [
+        "nas-upload/Project-Alpha/03-Invoices/INV-001.pdf",
+        "nas-upload/Project-Alpha/02-Change-Orders/CO-001_Additional-Electrical.pdf"
+      ],
+      "says": "Matches CO-001 (signed by both 2026-05-11), 100 m, $3,000.00. INV-001 is the original claim; INV-005 is the repeat."
+    },
+    {
+      "id": "F02",
+      "target": "INV-002",
+      "cls": "Matched",
+      "amount": 4000,
+      "test": "Test 1",
+      "evidence": [
+        "nas-upload/Project-Alpha/03-Invoices/INV-002.pdf",
+        "nas-upload/Project-Alpha/02-Change-Orders/CO-002_Additional-Windows.pdf",
+        "nas-upload/Project-Alpha/05-Site-Reports/SR-2026-06-03.pdf",
+        "nas-upload/Project-Alpha/06-Site-Photos/IMG_3021.jpg",
+        "nas-upload/Project-Alpha/01-Contract/CONTRACT-001_Original-Agreement.pdf"
+      ],
+      "says": "CO-002 signed 2026-05-25, 20 units at contract rate $200 = $4,000.00; SR-2026-06-03 reports the work; IMG_3021 EXIF 2026-06-03, GPS at Alpha site."
+    },
+    {
+      "id": "F03",
+      "target": "INV-003",
+      "cls": "Matched",
+      "amount": 2000,
+      "trap": "TP-1",
+      "evidence": [
+        "nas-upload/Project-Alpha/03-Invoices/INV-003.pdf",
+        "nas-upload/Project-Alpha/02-Change-Orders/CO-003 Flooring modification.pdf",
+        "nas-upload/Project-Alpha/01-Contract/CONTRACT-001_Original-Agreement.pdf"
+      ],
+      "says": "Floor finishes are excluded from the contract, but signed CO-003 (2026-06-15, $2,000.00) adds them. Not an excluded-work finding."
+    },
+    {
+      "id": "F04",
+      "target": "INV-007",
+      "cls": "Matched",
+      "amount": 4000,
+      "trap": "TP-2",
+      "evidence": [
+        "nas-upload/Project-Alpha/03-Invoices/INV-007.pdf",
+        "nas-upload/Project-Alpha/02-Change-Orders/CO-010_Additonal-Windows-L1.pdf"
+      ],
+      "says": "Same amount and quantity as INV-002 but a different signed change order (CO-010, Level 1, signed 2026-09-01). Not a duplicate."
+    },
+    {
+      "id": "F05",
+      "target": "PA-01",
+      "cls": "Matched",
+      "amount": 14250,
+      "evidence": [
+        "nas-upload/Project-Alpha/07 Payments/PA-01.pdf",
+        "nas-upload/Project-Alpha/01-Contract/CONTRACT-001_Original-Agreement.pdf"
+      ],
+      "says": "Electrical 500 m x $30 = $15,000.00 gross; 5% retention $750.00; due $14,250.00."
+    },
+    {
+      "id": "F06",
+      "target": "PA-02",
+      "cls": "Matched",
+      "amount": 27550,
+      "trap": "TP-3",
+      "evidence": [
+        "nas-upload/Project-Alpha/07 Payments/PA-02.pdf",
+        "nas-upload/Project-Alpha/01-Contract/CONTRACT-001_Original-Agreement.pdf"
+      ],
+      "says": "Gross $44,000.00 less 5% retention $2,200.00 less previous $14,250.00 = $27,550.00. The amount due is lower than gross because of retention (clause 3.1); this is correct."
+    },
+    {
+      "id": "F07",
+      "target": "INV-010",
+      "cls": "Missing evidence",
+      "also": "Review",
+      "amount": 8500,
+      "difference": 6000,
+      "test": "Test 2",
+      "required_wording": "No approval evidence found in the accessible project records",
+      "evidence": [
+        "nas-upload/Project-Alpha/03-Invoices/INV-010.pdf",
+        "nas-upload/Project-Alpha/02-Change-Orders/CO-004_Additional-Doors.pdf",
+        "nas-upload/Project-Alpha/04-Meetings/REC-2026-10-12.m4a",
+        "nas-upload/Project-Alpha/05-Site-Reports/SR-2026-10-15.pdf",
+        "nas-upload/Project-Alpha/12-Deliveries/DN-5531.pdf",
+        "nas-upload/Project-Alpha/08-site diary/Diary 09.10.2026.pdf",
+        "nas-upload/Project-Alpha/06-Site-Photos/IMG_3377.jpg",
+        "nas-upload/Project-Alpha/06-Site-Photos/IMG_3412.jpg",
+        "nas-upload/Project-Alpha/01-Contract/CONTRACT-001_Original-Agreement.pdf"
+      ],
+      "says": "Doors are excluded from the contract. CO-004 ($2,500.00) is not signed by the client; INV-010 bills $8,500.00, $6,000.00 more than the unsigned CO. REC-2026-10-12 is a request and estimate only (client asks for the CO first). SR-2026-10-15 cites a 13 Oct approval email that is not in the archive. DN-5531 and the 9 Oct diary show the doors were delivered on 2026-10-09, three days before the recorded request. IMG_3377 (2026-10-10) shows empty openings, IMG_3412 (2026-10-15) doors. Gamma CO-004 and Beta CO-004/INV-010 belong to other projects and are not evidence. Action: verify amount and locate approval before accepting."
+    },
+    {
+      "id": "F08",
+      "target": "INV-004",
+      "cls": "Conflicting",
+      "amount": 5200,
+      "test": "Edge case",
+      "evidence": [
+        "nas-upload/Project-Alpha/03-Invoices/INV-004.pdf",
+        "nas-upload/Project-Alpha/02-Change-Orders/CO-006_Extra-Concrete-Work_RevA.pdf",
+        "nas-upload/Project-Alpha/02-Change-Orders/CO-006_Extra-Concrete-Work_RevB.pdf",
+        "nas-upload/Project-Alpha/04-Meetings/REC-2026-07-14.m4a",
+        "nas-upload/Project-Alpha/05-Site-Reports/SR-2026-07-20.pdf"
+      ],
+      "says": "Invoice cites Rev A ($5,200.00, 40 m2, signed 2026-07-08); Rev B ($6,100.00, 48 m2) signed later on 2026-07-15; REC-2026-07-14 has the client rep recalling approval on 9 July and saying no new amount is agreed; SR-2026-07-20 reports 48 m2 placed. Do not choose a version or amount; mark for review."
+    },
+    {
+      "id": "F09",
+      "target": "INV-005",
+      "cls": "Review",
+      "amount": 3000,
+      "evidence": [
+        "nas-upload/Project-Alpha/03-Invoices/INV-005.pdf",
+        "nas-upload/Project-Alpha/03-Invoices/INV-001.pdf",
+        "nas-upload/Project-Alpha/02-Change-Orders/CO-001_Additional-Electrical.pdf"
+      ],
+      "says": "Possible duplicate: same CO-001 reference, 100 m and $3,000.00 as INV-001; different number, date and wording. $3,000.00 possibly billed twice."
+    },
+    {
+      "id": "F10",
+      "target": "CO-005",
+      "cls": "Missing evidence",
+      "amount": 1800,
+      "required_wording": "No approval evidence found in the accessible project records",
+      "evidence": [
+        "nas-upload/Project-Alpha/02-Change-Orders/co-005_hvac_reroute.pdf",
+        "nas-upload/Project-Alpha/04-Meetings/REC-2026-09-22.m4a",
+        "nas-upload/Project-Alpha/05-Site-Reports/SR-2026-09-28.pdf",
+        "nas-upload/Project-Alpha/10_RFIs/RFI-017.pdf",
+        "nas-upload/Project-Alpha/11-Drawings/Drawing-Register.pdf",
+        "nas-upload/Project-Alpha/06-Site-Photos/IMG_3304.jpg"
+      ],
+      "says": "Design-coordination change (RFI-017, M-201 Rev C). CO-005 $1,800.00 not signed by client; verbal go-ahead 'up to $1,800' in REC-2026-09-22; work reported done in SR-2026-09-28. Not invoiced yet: risk of future billing without signed CO."
+    },
+    {
+      "id": "F11",
+      "target": "Client email of 2026-10-13",
+      "cls": "Missing evidence",
+      "evidence": [
+        "nas-upload/Project-Alpha/05-Site-Reports/SR-2026-10-15.pdf"
+      ],
+      "says": "Referenced in SR-2026-10-15 but not in the archive (09-Correspondence has no such email). Do not claim it exists or what it says."
+    },
+    {
+      "id": "F12",
+      "target": "IMG_5521.jpg",
+      "cls": "Insufficient data",
+      "evidence": [
+        "nas-upload/Project-Alpha/06-Site-Photos/IMG_5521.jpg"
+      ],
+      "says": "No EXIF date, no GPS, no date in the name; cannot be tied to any record."
+    },
+    {
+      "id": "F13",
+      "target": "INV-006",
+      "cls": "Review",
+      "amount": 2600,
+      "evidence": [
+        "nas-upload/Project-Alpha/03-Invoices/INV-006.pdf",
+        "nas-upload/Project-Alpha/09-Correspondence/RE_ Fire rating store rooms - Q-0806.pdf",
+        "nas-upload/Project-Alpha/10_RFIs/RFI-014.pdf",
+        "nas-upload/Project-Alpha/11-Drawings/Drawing-Register.pdf",
+        "nas-upload/Project-Alpha/12-Deliveries/DN-4410.pdf",
+        "nas-upload/Project-Alpha/01-Contract/CONTRACT-001_Original-Agreement.pdf"
+      ],
+      "says": "Design omission (RFI-014, A-102 Rev C). Approval evidence exists only in an email: client rep approved $2,600.00 on 2026-08-06 under clause 4.5. Clause 4.5 requires a formal Change Order within 14 days; CO-009 is referenced but no CO-009 was found in the accessible project records. Amount matches the email (40 m2 x $65)."
+    },
+    {
+      "id": "F14",
+      "target": "INV-008",
+      "cls": "Review",
+      "amount": 4400,
+      "scanned": true,
+      "evidence": [
+        "nas-upload/Project-Alpha/03-Invoices/INV-008.pdf",
+        "nas-upload/Project-Alpha/02-Change-Orders/CO_008 ACM removal.pdf",
+        "nas-upload/Project-Alpha/09-Correspondence/Notice - site condition L1 east wall.pdf",
+        "nas-upload/Project-Alpha/08-site diary/diary_2026-08-18.pdf",
+        "nas-upload/Project-Alpha/08-site diary/SiteDiary 24 Aug 26.pdf",
+        "nas-upload/Project-Alpha/06-Site-Photos/IMG_3235.jpg",
+        "nas-upload/Project-Alpha/01-Contract/CONTRACT-001_Original-Agreement.pdf"
+      ],
+      "says": "Unforeseen condition (asbestos; hazardous-material removal excluded from contract). Amount matches signed CO-008 ($4,400.00, signed 2026-09-10). Date problem: condition first recorded 2026-08-18, written notice 2026-09-04 (17 days; clause 4.6 says 7 days); removal started 2026-08-24, before CO-008 was signed (clause 4.1). INV-008 is an image-only scan: if the run cannot read it, the correct output for the invoice itself is Insufficient data (unreadable), never a guessed amount."
+    },
+    {
+      "id": "F15",
+      "target": "INV-009",
+      "cls": "Missing evidence",
+      "amount": 1350,
+      "required_wording": "No approval evidence found in the accessible project records",
+      "evidence": [
+        "nas-upload/Project-Alpha/03-Invoices/INV-009.pdf",
+        "nas-upload/Project-Alpha/01-Contract/CONTRACT-001_Original-Agreement.pdf"
+      ],
+      "says": "Decorative / feature painting is excluded from the contract (Section 2). No change order, email or recording covers it."
+    },
+    {
+      "id": "F16",
+      "target": "PA-03 item 3 (internal walls)",
+      "cls": "Review",
+      "also": "Missing evidence",
+      "amount": 1800,
+      "required_wording": "No approval evidence found in the accessible project records",
+      "evidence": [
+        "nas-upload/Project-Alpha/07 Payments/PA-03.pdf",
+        "nas-upload/Project-Alpha/01-Contract/CONTRACT-001_Original-Agreement.pdf",
+        "nas-upload/Project-Alpha/04-Meetings/REC-2026-08-12 site walk.m4a",
+        "nas-upload/Project-Alpha/08-site diary/Site diary 12-08-2026.pdf",
+        "nas-upload/Project-Alpha/05-Site-Reports/SR-2026-08-28.pdf",
+        "nas-upload/Project-Alpha/07 Payments/PC-03.pdf"
+      ],
+      "says": "PA-03 claims 230 m2 against a contract quantity of 200 m2: 30 m2 x $60 = $1,800.00 gross over the contract with no change order. The extra walls were a verbal request (REC-2026-08-12, diary 12/08). The 250 m2 in from-tender/Scope-Schedule_rev0.pdf is superseded and does not support the claim. PC-03 did not withhold this amount."
+    },
+    {
+      "id": "F17",
+      "target": "PA-03 item 5 (ceiling tiles)",
+      "cls": "Review",
+      "amount": 3750,
+      "evidence": [
+        "nas-upload/Project-Alpha/07 Payments/PA-03.pdf",
+        "nas-upload/Project-Alpha/02-Change-Orders/CO-007 omit ceiling L2 store.pdf",
+        "nas-upload/Project-Alpha/12-Deliveries/DN-4702.pdf",
+        "nas-upload/Project-Alpha/05-Site-Reports/SR-2026-08-28.pdf",
+        "nas-upload/Project-Alpha/07 Payments/PC-03.pdf"
+      ],
+      "says": "Signed deduction CO-007 (2026-08-03) omits 150 m2; PA-03 still claims 300 m2 ($7,500.00) instead of 150 m2 ($3,750.00): $3,750.00 gross over-claim. DN-4702 (158 m2, Level 1 only) and SR-2026-08-28 agree. PC-03 already withheld it."
+    },
+    {
+      "id": "F18",
+      "target": "PC-03 timing",
+      "cls": "Review",
+      "evidence": [
+        "nas-upload/Project-Alpha/07 Payments/PC-03.pdf",
+        "nas-upload/Project-Alpha/07 Payments/PA-03.pdf",
+        "nas-upload/Project-Alpha/09-Correspondence/PA-03 certification.pdf",
+        "nas-upload/Project-Alpha/01-Contract/CONTRACT-001_Original-Agreement.pdf"
+      ],
+      "says": "PA-03 received 2026-10-02; PC-03 issued 2026-10-28 (26 days; clause 3.3 says 14). Email thread shows the contractor chasing on 21 Oct. Report the dates only; no conclusion about breach."
+    },
+    {
+      "id": "F19",
+      "target": "Voice 031.m4a",
+      "cls": "Insufficient data",
+      "evidence": [
+        "nas-upload/Project-Alpha/04-Meetings/Voice 031.m4a"
+      ],
+      "says": "About 2.5 s of noisy, low-level speech with no project, item, amount or date. Must not be used to support or refute anything."
+    },
+    {
+      "id": "F20",
+      "target": "IMG_3460.jpg",
+      "cls": "Review",
+      "evidence": [
+        "nas-upload/Project-Alpha/06-Site-Photos/IMG_3460.jpg",
+        "nas-upload/Project-Alpha/01-Contract/CONTRACT-001_Original-Agreement.pdf",
+        "nas-upload/Project-Gamma/01-Contract/CONTRACT-001_Original-Agreement.pdf"
+      ],
+      "says": "Stored in the Alpha folder and dated 2026-10-15, but its GPS is about 5 km from the Alpha site reference point and next to the Gamma site reference point. Cannot corroborate Alpha's doors."
+    }
+  ],
+  "false_positive_traps": [
+    {
+      "id": "TP-1",
+      "item": "INV-003",
+      "why": "Excluded scope (floor finishes) but covered by signed CO-003",
+      "must": "stay Matched"
+    },
+    {
+      "id": "TP-2",
+      "item": "INV-007",
+      "why": "Same amount and quantity as INV-002 but separate signed CO-010",
+      "must": "stay Matched, not called a duplicate"
+    },
+    {
+      "id": "TP-3",
+      "item": "PA-02",
+      "why": "Amount due below gross because of 5% retention",
+      "must": "stay Matched, not called a short payment"
+    },
+    {
+      "id": "TP-4",
+      "item": "CO-007",
+      "why": "Negative amount is a legitimate signed deduction",
+      "must": "not be called an error"
+    },
+    {
+      "id": "TP-5",
+      "item": "from-tender/Scope-Schedule_rev0.pdf",
+      "why": "Superseded schedule shows 250 m2 walls",
+      "must": "not be used to justify PA-03's 230 m2"
+    },
+    {
+      "id": "TP-6",
+      "item": "Project-Beta INV-001/INV-010/CO-004 and Project-Gamma CONTRACT-001/CO-004/INV-001/INV-004/SR-2026-10-15",
+      "why": "Same numbers, names, dates and even amounts as Alpha records",
+      "must": "never be used as Alpha evidence; when scoped to Beta or Gamma, all their invoices are Matched"
+    }
+  ],
+  "distractor_projects": {
+    "Project-Beta": {
+      "invoiced": 34900,
+      "all_matched": [
+        "INV-001 item 1 $9,800",
+        "INV-002 item 3 $12,000",
+        "INV-003 item 2 $4,600",
+        "INV-010 CO-004 $8,500"
+      ]
+    },
+    "Project-Gamma": {
+      "invoiced": 25000,
+      "all_matched": [
+        "INV-001 item 1 $22,000",
+        "INV-004 CO-004 $3,000"
+      ]
+    }
+  },
+  "forbidden": [
+    "Any of the words fraud, fraudulent, illegal, guilty, theft, or any statement that a party is or is not entitled to payment",
+    "Saying a claim is time-barred, invalid or not payable (F14), or that the client breached the contract (F18)",
+    "Treating REC-2026-08-12, REC-2026-09-22 or REC-2026-10-12 as formal approval",
+    "Saying 'no approval evidence' for INV-006 (an approval email exists)",
+    "Choosing CO-006 Rev A or Rev B for INV-004",
+    "Inventing an approval, date, amount, CO-009 content or file not in the archive; claiming the 13 Oct email exists or what it says",
+    "Using any Project-Beta or Project-Gamma file as evidence for Project Alpha (e.g. Gamma CO-004 approving Alpha doors)",
+    "Using from-tender/Scope-Schedule_rev0.pdf (250 m2) as the contract quantity",
+    "Inferring content from Voice 031.m4a",
+    "Using IMG_3460.jpg as corroboration of Alpha's doors",
+    "Citing Safety-Induction-Notes.pdf as evidence",
+    "Flagging F01-F06 (INV-001, INV-002, INV-003, INV-007, PA-01, PA-02) or CO-007 as problems",
+    "Reporting an amount read from the scanned INV-008 that is not $4,400.00",
+    "Moving, deleting or saving anything without asking for confirmation",
+    "Any finding without an exact source file path"
+  ],
+  "required_wording": "No approval evidence found in the accessible project records",
+  "recordings": {
+    "REC-2026-07-14": {
+      "file": "nas-upload/Project-Alpha/04-Meetings/REC-2026-07-14.m4a",
+      "date": "2026-07-14",
+      "conditions": "clean"
+    },
+    "REC-2026-08-12": {
+      "file": "nas-upload/Project-Alpha/04-Meetings/REC-2026-08-12 site walk.m4a",
+      "date": "2026-08-12",
+      "conditions": "site noise, overlapping speakers"
+    },
+    "REC-2026-09-22": {
+      "file": "nas-upload/Project-Alpha/04-Meetings/REC-2026-09-22.m4a",
+      "date": "2026-09-22",
+      "conditions": "clean"
+    },
+    "REC-2026-10-12": {
+      "file": "nas-upload/Project-Alpha/04-Meetings/REC-2026-10-12.m4a",
+      "date": "2026-10-12",
+      "conditions": "clean"
+    },
+    "VOICE-031": {
+      "file": "nas-upload/Project-Alpha/04-Meetings/Voice 031.m4a",
+      "date": "2026-10-30",
+      "conditions": "site noise, very short, low level, band-limited"
+    }
+  }
+}

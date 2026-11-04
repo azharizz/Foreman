@@ -1,0 +1,7 @@
+REC-2026-10-12 - nas-upload/Project-Alpha/04-Meetings/REC-2026-10-12.m4a - recorded 2026-10-12 - clean (script used to synthesize the audio; ground truth)
+
+Tomas: This is the site meeting for Project Alpha on the twelfth of October, with Maya from the Client.
+Maya: We would like five more doors on Level 2. What would that cost roughly?
+Tomas: Around twenty five hundred dollars for five doors. I can send you a change order.
+Maya: Please send the change order first, and I will review it.
+Tomas: Will do. I will send it in the next few days.

@@ -1,0 +1,7 @@
+REC-2026-09-22 - nas-upload/Project-Alpha/04-Meetings/REC-2026-09-22.m4a - recorded 2026-09-22 - clean (script used to synthesize the audio; ground truth)
+
+Tomas: This is the progress meeting for Project Alpha on the twenty second of September. Maya and I are on site.
+Maya: The new corridor lighting clashes with the ceiling ducts on Level 1. Can you reroute the ducts?
+Tomas: Yes, we can. It would cost about eighteen hundred dollars.
+Maya: Go ahead and reroute them, up to eighteen hundred dollars. We will sort out the paperwork later.
+Tomas: Understood. I will prepare a change order for you to sign.
