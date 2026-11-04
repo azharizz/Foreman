@@ -1,0 +1,30 @@
+{
+  "checkFormatVersion": "2.0.0",
+  "status": "static-pass",
+  "target": {
+    "skillName": "foreman"
+  },
+  "catalog": {
+    "checkedVersion": "2.0.0"
+  },
+  "files": [
+    {
+      "path": "references/evidence-rules.md",
+      "sha256": "ff5c3183902ba04a4eba400d204f51a90281b4626399b645f36265244fe96d54"
+    },
+    {
+      "path": "references/ledger-and-report.md",
+      "sha256": "bdc2519c56534674cd0e4bde2becb64a937715fc9b2030ebf95e9990e2f8434a"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "c02a64a0b4bc6cca2df5357d1b6955ddb30e165a9d36f07d3dfbe368c722262e"
+    }
+  ],
+  "summary": {
+    "errors": 0,
+    "warnings": 0,
+    "info": 0
+  },
+  "diagnostics": []
+}

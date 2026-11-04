@@ -18,7 +18,7 @@ Run with `tools/verify_dataset.py`, which reads only the files in `nas-upload/` 
 | Markers | "SYNTHETIC TEST DATA" in every PDF (including the OCR'd scan), in photo pixels and EXIF, in audio metadata, and in an `.eml` header | Pass |
 | Hint words in paths | Regex for signed, draft, duplicate, approved, final, superseded, missing, copy, etc. over all `nas-upload/` paths | None found |
 | Answer-key leak | Regex for answer key, expected class, false positive, F01…, TP-…, forbidden, ground truth over all PDF text | None found |
-| Determinism | Generated twice and compared SHA-256 of every file | Identical, audio included |
+| Determinism | Generated twice back-to-back and compared SHA-256 of every file | Identical, audio included. Across sessions, one recording (`REC-2026-10-12`) differed by 0.01 s from the `say` engine; whisper gives the same words. Documents and photos are always identical |
 
 **Whisper small.en results**
 

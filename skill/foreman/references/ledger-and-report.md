@@ -6,7 +6,7 @@ Read this before building findings (Stage 5) and the report (Stage 6). The outpu
 
 Row rules:
 - Every invoice gets one row, including Matched ones. If one invoice has several lines with different results, give each line that raises a finding its own row (target "INV-012 line 2").
-- Every payment application gets one row for the application as a whole (arithmetic, retention, previously certified). Each line that raises a finding gets its own extra row (target "PA-03 item 3"). The application row is Matched only when its arithmetic is correct and none of its lines raised a finding. Otherwise it takes the most serious class among its own checks and its line rows (Conflicting, then Missing evidence, then Review, then Insufficient data), and points to those line rows.
+- Every payment application gets one row for the application as a whole (arithmetic, retention, previously certified). Each line that raises a finding gets its own extra row (target "PA-03 item 3"). The application row is Matched only when its arithmetic is correct and none of its lines raised a finding. Otherwise it takes the most serious **primary** class among its own checks and its line rows (Conflicting, then Missing evidence, then Review, then Insufficient data), and points to those line rows.
 - Every non-claim risk from [evidence-rules.md](evidence-rules.md) section 4 gets a row.
 - Matched rows are kept, so a reviewer can see what was checked.
 
@@ -40,7 +40,7 @@ Row rules:
 ## 3. Totals
 
 Compute every total from the Ledger, show its formula, and label claims and payment applications separately:
-- Total invoiced (sum of invoice totals).
+- Total invoiced: the sum of all invoice totals, including invoices with findings. An invoice whose amount could not be read is listed by number beside the total ("plus INV-xxx, amount unreadable") and never estimated.
 - Invoices Matched / flagged (any class other than Matched).
 - Amount without approval evidence: the full amount of each invoice whose finding carries the required sentence, plus the excess value of each payment-application line that carries it. Non-claim rows (for example an unsigned change order not yet invoiced) are listed but not added.
 - For each payment application: claimed due, the amount the findings dispute, and the due amount recalculated without the disputed lines (gross − disputed, less retention, less previously certified).
@@ -53,7 +53,7 @@ Compute every total from the Ledger, show its formula, and label claims and paym
 Prepared from the accessible records in {confirmed folder} on {date}. This report identifies documentary discrepancies for human review. It is not a legal or financial decision.
 
 ## Summary
-- Claims checked: {n} invoices, {n} payment applications. Findings: {n} Conflicting, {n} Missing evidence, {n} Review, {n} Insufficient data, {n} Matched.
+- Claims checked: {n} invoices, {n} payment applications. Ledger rows: {n} Conflicting, {n} Missing evidence, {n} Review, {n} Insufficient data, {n} Matched (every row counted once by its primary class, including application rows and non-claim rows).
 - Total invoiced {amount}; Matched {amount}; flagged {amount}; without approval evidence {amount}.
 - Most important actions: {up to three, one line each}.
 

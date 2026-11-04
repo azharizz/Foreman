@@ -111,9 +111,12 @@ These are design choices, not facts from the kit or the research:
 | F19 voice memo | Stage 4 rule + section 4 (thin recording → Insufficient data) |
 | Superseded schedule, Beta, Gamma | Stage 2 (superseded never used) and Required input (scope = confirmed folder) |
 
-## 7. Next (steps 4–6)
+## 7. Status after steps 4–7 (2026-11-04)
 
-1. Run the official checker on `foreman/` after your OK, and keep its JSON output.
-2. Dry-run: give a fresh assistant only `foreman/` and `dataset-v2/nas-upload/Project-Alpha/`, simulating expert results from the files. Score with `dataset-v2/ground-truth/SCORING_SHEET.md`.
-3. Write the proposal (500 words) from this file and the scores.
-4. ZIP `foreman/` (the folder only).
+- **Step 4, validation:**
+  - The official checker passes (`validation/official-check.json`).
+  - Three dry-run rounds on Haiku and Sonnet: round 1 had one failure (Haiku, totals); rounds 2 and 3 passed. Details and every fix are in `validation/DRY_RUN_RESULTS.md`.
+  - The dry runs also found two dataset bugs (CO-005 and CO-006 Rev B issue dates). Both are fixed in the generator.
+- **Step 5, proposal:** `submission/PROPOSAL.md`, 489 words. The team names are still to be filled in.
+- **Step 6, package:** `submission/foreman.zip` (checked) and `submission/CHECKLIST.md`.
+- **Step 7, NAS day:** `submission/NAS_DAY_PLAN.md`.

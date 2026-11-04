@@ -57,7 +57,7 @@ Actions these experts are expected to use (catalog 2.0.0): `ug-filesystem` ls/fi
 
 Run the stages in order. Each stage uses only the **real result** returned by the upstream delegation.
 
-The delegations below are templates. Before sending one, complete it with real values from the upstream result: write the confirmed folder path where it says "the project folder the user confirmed", and append the exact list of real file paths it must process where it says "among the files returned by Stage 1". Never pass a guess, a path from memory or a path from another project. When a stage covers more than 50 files, send the same delegation in batches of up to 50 paths. Each instruction is wrapped in single quotes, so write any apostrophe inside it as the sequence '"'"' (or rephrase without one).
+The delegations below are templates. Before sending one, complete it with real values from the upstream result: write the confirmed folder path where it says "the project folder the user confirmed", and append the exact list of real file paths it must process where it says "among the files returned by Stage 1". Never pass a guess, a path from memory or a path from another project. When a stage covers more than 50 files, send the same delegation in batches of up to 50 paths. Each instruction is wrapped in single quotes, so write any apostrophe inside it as the sequence '"'"'. Never reword a quotation to avoid an apostrophe.
 
 Keep machine names (agent IDs, CLI and action names, status values) out of user-facing text. Tell the user what is happening in plain words, for example "Reading 10 change orders".
 
@@ -71,7 +71,7 @@ File names in real archives are unreliable, so identify each document by its con
 
 `delegate --target document-agent --instruction 'For each document file among the files returned by Stage 1, read the title and first page only and return: real path, the document type shown (contract or agreement, schedule of quantities, change order or variation, quote, invoice, payment application, payment certificate, email or letter, RFI, drawing or specification register, delivery note, daily diary, site report, meeting minutes, or other), the document number and date shown, the project name shown, and whether the document says it is a draft, superseded, for discussion only or replaced. Report files that cannot be read.'`
 
-Sort the files into record types using this content result; use folder and file names only for files the expert could not type. Audio files are recordings; image files are photos. A document whose project name differs from the confirmed project is listed under "Coverage and limits" and never cited. A file that fits no type is listed as "not used".
+Sort the files into record types using this content result; when a document's title and other text suggest different types, the title wins; use folder and file names only for files the expert could not type. Audio files are recordings; image files are photos. A document whose project name differs from the confirmed project is listed under "Coverage and limits" and never cited. A file that fits no type is listed as "not used".
 
 ## Stage 2 — Contract intelligence (Original Scope Register)
 
@@ -95,7 +95,7 @@ Build the **Change-Order Register**. Give every statement about a change exactly
 
 Merge every dated event from Stages 2–4 into one **Evidence Timeline**, oldest first: requests, discussions, instructions, approvals, notices, deliveries, work reported, photos, claims, certificates. Each event keeps its source path and evidence type. A file modified time is never a document date or a photo capture date.
 
-A transcript counts as evidence only for what it literally says. Treat a recording as Insufficient data when its transcript is empty, very short, flagged as low quality, or names no project item, quantity, amount or date. Take a recording date from its metadata or a date stated in the recording; if neither exists, use the date in its file name and say so. Never fill gaps in a transcript.
+A transcript counts as evidence only for what it literally says. If it has no speaker labels, quote it as "a speaker says" and do not attribute the words to a named person. Treat a recording as Insufficient data when its transcript is empty, very short, flagged as low quality, or names no project item, quantity, amount or date. Take a recording date from its metadata or a date stated in the recording; if neither exists, use the date in its file name and say so. Never fill gaps in a transcript.
 
 ## Stage 5 — Claim reconciliation (Invoice Exception Register)
 
@@ -103,7 +103,7 @@ A transcript counts as evidence only for what it literally says. Treat a recordi
 
 Then reconcile each claim with the ladder in [references/evidence-rules.md](references/evidence-rules.md) section 3. Do every calculation from the extracted numbers and show it in the finding (for example "230 m2 − 200 m2 = 30 m2 × $60.00 = $1,800.00").
 
-When a line's numbers are close but unclear, ask for an independent cross-check, using only that claim and the documents it depends on:
+When a readable line's numbers look inconsistent, ask for an independent cross-check, using only that claim and the documents it depends on. A cross-check cannot repair an unreadable scan; do not send one for it:
 
 `delegate --target document-agent --instruction 'Reconcile only the claim document, contract and change order files whose real paths are listed in this instruction. For each claim line return whether description, quantity, rate and amount agree with the contract item or change order it cites, every difference found, and the coverage. Do not judge approval, entitlement or intent.'`
 
@@ -118,6 +118,8 @@ Present the report in chat first, using the template in [references/ledger-and-r
 Then ask: "Do you want me to save this report as a new file? Which existing folder should it go in?" Offer the confirmed project folder as the default, so the report stays with the project records. Foreman does not create folders; if the named folder does not exist, ask for an existing one. Save only after the user names the folder and confirms:
 
 `delegate --target knowledge-agent --instruction 'Save the Foreman investigation report text written in this instruction as a new Markdown file in the existing folder the user confirmed for reports. Use a file name that starts with Foreman-report followed by the project name and the date of the report. Create a new file only; never overwrite or change an existing file. Return the real output path and whether the save was verified.'`
+
+When sending it, write the real folder path, the exact file name (Foreman sets it from the report date), and then the complete report text after the line "Report text:". The report date is the day Foreman produces the report. Report the saved path exactly as the expert returns it; if it differs from the name requested, tell the user.
 
 Report the saved path only when the save returns completed and verified. If the user declines, finish with the report in chat. Save at most once per confirmation.
 

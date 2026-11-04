@@ -85,4 +85,4 @@ python3 -m venv "$SCRATCH/venv" && "$SCRATCH/venv/bin/pip" install -r tools/requ
 - Use a scratch folder outside the project for the venv.
 - Requires macOS (`say`, `afconvert`, `osascript`), plus `ffmpeg` and poppler.
 - Regenerating rewrites `nas-upload/`, `alt-formats/`, `MANIFEST.csv`, `ground-truth/answer_key.json`, `ground-truth/ANSWER_KEY.md` and `ground-truth/transcripts/`. It keeps the hand-written docs and `SCORING_SHEET.md`.
-- Two consecutive runs on this machine gave byte-identical files, audio included. `say` voices can differ between macOS versions, so audio hashes may change on another Mac.
+- Back-to-back runs on this machine gave byte-identical files, audio included. Across separate sessions, macOS `say` occasionally produces slightly different audio (seen once: `REC-2026-10-12.m4a` came out 0.01 s shorter, with the same words). All documents, photos, amounts and dates are fully deterministic; audio hashes may differ between runs or Macs.

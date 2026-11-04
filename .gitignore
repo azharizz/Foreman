@@ -157,3 +157,16 @@ dataset/
 __pycache__/
 .venv/
 _tmp/
+
+# --- Generated or local files (kept on disk, not in Git) ---
+# Local tool config
+.serena/
+# Proposal PDFs: built from submission/PROPOSAL.md; the final one carries team names
+submission/*.pdf
+# Skill ZIP: rebuilt from skill/foreman/ (see submission/CHECKLIST.md)
+submission/*.zip
+# Teaser video workspace (render script, brand sources, MP4): kept local; the video is hosted on YouTube
+video/
+# Dataset build scratch and regenerable audio copies
+dataset-v2/_tmp/
+dataset-v2/alt-formats/*.wav

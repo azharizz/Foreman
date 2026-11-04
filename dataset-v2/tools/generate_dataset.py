@@ -115,9 +115,9 @@ COS = {
     "CO-002": (None, "2026-05-22", "2026-05-25", 4000),
     "CO-003": (None, "2026-06-12", "2026-06-15", 2000),
     "CO-004": (None, "2026-10-14", None, 2500),
-    "CO-005": (None, "2026-09-23", None, 1800),
+    "CO-005": (None, "2026-09-26", None, 1800),
     "CO-006A": ("A", "2026-07-06", "2026-07-08", 5200),
-    "CO-006B": ("B", "2026-07-13", "2026-07-15", 6100),
+    "CO-006B": ("B", "2026-07-14", "2026-07-15", 6100),
     "CO-007": (None, "2026-07-29", "2026-08-03", -3750),
     "CO-008": (None, "2026-09-07", "2026-09-10", 4400),
     "CO-010": (None, "2026-08-28", "2026-09-01", 4000),
@@ -266,13 +266,13 @@ def make_cos_alpha():
             "Supply and install 5 additional doors on Level 2, including frames and standard hardware.",
             "5 doors at $500.00 per door (estimate)", 2500, None, note="Annex A (door schedule) is attached separately.",
             cause="Client request", shown="14 Oct 2026")
-    make_co("co-005_hvac_reroute.pdf", "CO-005", None, "2026-09-23",
+    make_co("co-005_hvac_reroute.pdf", "CO-005", None, "2026-09-26",
             "Revise the Level 1 ceiling duct routing to clear the relocated corridor lighting (see RFI-017, M-201 Rev C).",
-            "Lump sum", 1800, None, cause="Design coordination (lighting / duct clash)", shown="23/09/2026")
+            "Lump sum", 1800, None, cause="Design coordination (lighting / duct clash)", shown="26/09/2026")
     make_co("CO-006_Extra-Concrete-Work_RevA.pdf", "CO-006", "A", "2026-07-06",
             "Place a concrete leveling topping over 40 m2 of the Level 1 corridor slab.", "Lump sum for 40 m2", 5200,
             "2026-07-08", cause="Unforeseen slab level deviation")
-    make_co("CO-006_Extra-Concrete-Work_RevB.pdf", "CO-006", "B", "2026-07-13",
+    make_co("CO-006_Extra-Concrete-Work_RevB.pdf", "CO-006", "B", "2026-07-14",
             "Place a concrete leveling topping over 48 m2 of the Level 1 corridor slab (area extended).", "Lump sum for 48 m2",
             6100, "2026-07-15", cause="Unforeseen slab level deviation")
     make_co("CO-007 omit ceiling L2 store.pdf", "CO-007", None, "2026-07-29",
